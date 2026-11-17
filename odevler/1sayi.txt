@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author kevir
+ */
+
+import java.util.Scanner;
+
+public class Soru1 {
+
+    public static void main(String[] args) {
+
+        	Scanner ruzgar = new Scanner(System.in);
+
+        			int n;
+        			int i = 1;
+
+       
+ System.out.println("Bir N sayisi giriniz:");
+        
+n = ruzgar.nextInt();
+
+        if (n > 0) {
+
+            while (i <= n) {
+               
+ System.out.println(i);
+               
+ i = i + 1;
+            }
+
+        } else {
+           
+ System.out.println("Pozitif bir sayi girmeniz gerekiyor.");
+        }
+
+
+    }
+}

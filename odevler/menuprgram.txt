@@ -1,0 +1,129 @@
+```java
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author kevir
+ */
+
+import java.util.Scanner;
+
+public class Soru10 {
+
+    public static void main(String[] args) {
+
+        Scanner ruzgar = new Scanner(System.in);
+
+        
+int secim = 0;
+        	double sayi;
+\\do öğrenmiştik galiba ya
+
+        do {
+
+            System.out.println("");
+            		System.out.println("------ MENU ------");
+           				 System.out.println("1 - Sayinin karesi");
+           					 System.out.println("2 - Sayinin kupu");
+            							System.out.println("3 - Tek mi cift mi");
+           								 System.out.println("4 - Pozitif mi negatif mi");
+           									 System.out.println("5 - Cikis");
+           										 System.out.print("Seciminizi giriniz: ");
+
+            secim = ruzgar.nextInt();
+
+            switch (secim) {
+
+                	case 1:
+
+                    System.out.print("Bir sayi giriniz: ");
+
+                    sayi = ruzgar.nextDouble();
+
+                    System.out.println("Sayinin karesi: " + (sayi * sayi));
+
+                    break;
+
+                case 2:
+
+                    System.out.print("Bir sayi giriniz: ");
+
+                    sayi = ruzgar.nextDouble();
+
+                    System.out.println("Sayinin kupu: " + (sayi * sayi * sayi));
+
+                    break;
+
+                case 3:
+
+                    System.out.print("Bir tam sayi giriniz: ");
+
+                    int sayi2 = ruzgar.nextInt();
+
+                    if (sayi2 % 2 == 0) {
+                        System.out.println("Sayi cifttir.");
+
+                    } else {
+
+                        System.out.println("Sayi tektir.");
+                    }
+
+                    break;
+
+                case 4:
+
+                    System.out.print("Bir sayi giriniz: ");
+
+                   	 sayi = ruzgar.nextDouble();
+
+                    			if (sayi > 0) {
+                       
+ System.out.println("Sayi pozitiftir.");
+                    } else if (sayi < 0) {
+
+                        System.out.println("Sayi negatiftir.");
+                    } else {
+
+                        System.out.println("Sayi sifirdir.");
+                    }
+
+                    break;
+
+                case 5:
+
+                    System.out.println("Programdan cikiliyor.");
+
+                    break;
+
+                default:
+
+                    System.out.println("Yanlis secim yaptiniz.");
+
+                    break;
+            }
+
+        } while (secim != 5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+

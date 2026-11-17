@@ -1,0 +1,80 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author kevir
+ */
+
+import java.util.Scanner;
+
+public class Soru4 {
+
+    public static void main(String[] args) {
+
+        Scanner ruzgar = new Scanner(System.in);
+
+        int sayi;
+        	long faktoriyel = 1;
+
+        	System.out.print("Faktoriyeli alinacak sayiyi giriniz: ");
+        		sayi = ruzgar.nextInt();
+
+        		if (sayi < 0) {
+
+            System.out.println("Negatif sayilarin faktoriyeli olmaz.");
+
+        } 	else if (sayi > 20) {
+
+           
+ System.out.println("Bu programda 20'den buyuk sayi girmeyiniz.");
+
+        } else {
+
+            
+for (int i = 1; i <= sayi; i++) {
+
+                faktoriyel = faktoriyel * i;
+
+            }
+
+            System.out.println("Sonuc = " + faktoriyel);
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

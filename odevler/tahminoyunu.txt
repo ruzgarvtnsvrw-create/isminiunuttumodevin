@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author kevir
+ */
+
+import java.util.Scanner;
+
+public class Soru8 {
+
+    public static void main(String[] args) {
+
+        Scanner ruzgar = new Scanner(System.in);
+
+        int gizliSayi = 27; \\random sayı seçmeyi daha öğrenmedik normalde math.random() ile yapardıkda duralım simdi.
+        int tahmin = 0; \\bide abi buraları okuyorsan tokenizer üzerinde hala çalışıyorum 256k üzerine  305gb veriyle eğiticemde ban yedim aşırı vram kullanımından maribodan onu bekliyorum
+
+        System.out.println("1 ile 100 arasinda bir sayi tuttum.");
+
+        while (tahmin != gizliSayi) {
+
+            System.out.print("Tahmininizi giriniz: ");
+            tahmin = ruzgar.nextInt();
+
+            if (tahmin < 1 || tahmin > 100) {
+
+                System.out.println("1 ile 100 arasinda sayi girin.");
+
+            } else if (tahmin < gizliSayi) {
+
+                System.out.println("Daha buyuk bir sayi deneyin.");
+
+            } else if (tahmin > gizliSayi) {
+
+                System.out.println("Daha kucuk bir sayi deneyin.");
+
+            } else {
+
+                System.out.println("Dogru bildiniz!");
+
+            }
+
+        }
+
+    }
+}
+
